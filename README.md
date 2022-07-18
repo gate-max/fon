@@ -1,2 +1,3 @@
-# fm
-fm is functional magic, it references on haskell functions, particularly list related one.
+# fv
+
+fv is a functional style tool, it references on haskell functions, particularly list related one.
