@@ -39,6 +39,14 @@ def drop_takel(drop: int, take: int, xs) -> List[Any]:
     """always returns a list"""
     return list(xs[drop:drop+take])
 
+def head(xs) -> Any:
+    """index out of range error on empty variable"""
+    return xs[0]
+
+
+def init(xs) -> Any:
+    return xs[:-1]
+
 
 def intercalate(xs, xss) -> str:
     """returns a combined list"""
@@ -54,6 +62,11 @@ def intersperse(a, xs) -> List[Any]:
         ys.append(x)
         ys.append(a)
     return ys[:-1]
+
+
+def last(xs) -> Any:
+    """index out of range error on empty variable"""
+    return xs[-1]
 
 
 
@@ -73,6 +86,12 @@ def reverse(x) -> Any:
 def reversel(x) -> List[Any]:
     """reversel() always return a list, if this function is used in strings, it will return a list of characters / list of single string"""
     return list(x[::-1])
+
+
+
+def tail(xs) -> Any:
+    return xs[1:]
+
 
 def take(take: int, xs) -> Any:
     """works on lists and strings"""
