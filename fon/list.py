@@ -3,6 +3,19 @@ from itertools import chain, repeat
 from typing import Any, List
 
 
+
+def chunks_of(n:int, xs) -> List[Any]:
+    """
+    chunks_of(0, 'hello world')   --> ''
+    chunks_of(-2, 'hello world')   --> ''
+    chunks_of(5, 'hello world')   --> ['hello', ' worl', 'd']
+    chunks_of(3, rangel(10))       --> [[0,1,2], [3,4,5], [6,7,8], [9]]        
+    chunks_of(0, rangel(10))       --> []        
+    chunks_of(-2, rangel(10))      --> []             
+    """
+    return xs[:0] if not n else [xs[i:i + n] for i in range(0, len(xs), n)]
+
+
 def concat(lists) -> List[Any]:
     """returns a list of merging the original list of lists"""
     return list(chain.from_iterable(lists))

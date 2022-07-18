@@ -19,3 +19,17 @@ def intersperses(x: str, s: str) -> str:
     """intersperses('.', 'hello')  ---> 'h.e.l.l.o' """
     return x.join(s)
 
+
+def lines(s: str) -> List[str]:
+    return s.split('\n')
+
+
+def unlines(xs: List[str]) -> str:
+    return '\n'.join(xs)
+
+def unwords(xs: List[str]) -> str:
+    return ' '.join(xs)
+
+def words(s: str) -> List[str]:
+    return s.split()
+
