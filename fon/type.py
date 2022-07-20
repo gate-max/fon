@@ -60,6 +60,39 @@ def is_tuple(x) -> bool:
     return isinstance(x, tuple)
 
 
+def not_all_bool(xs) -> bool:
+    return not all_bool(xs)
+
+
+def not_all_float(xs) -> bool:
+    return not all_float(xs)
+
+
+def not_all_int(xs) -> bool:
+    return not all_int(xs)
+
+
+def not_all_iterable(xs) -> bool:
+    return not all_iterable(xs)
+
+
+def not_all_list(xs) -> bool:
+    return not all_list(xs)
+
+
+def not_all_num(xs) -> bool:
+    return not all_num(xs)
+
+
+def not_all_str(xs) -> bool:
+    return not all_str(xs)
+
+
+def not_all_tuple(xs) -> bool:
+    return not all_tuple(xs)
+
+
+
 def not_bool(x) -> bool:
     return not is_bool(x)
 
@@ -79,7 +112,7 @@ def not_list(x) -> bool:
     return not is_list(x)
 
 def not_null(x) -> bool:
-    return not null
+    return bool(x)
 
 
 def not_num(x) -> bool:
@@ -95,6 +128,6 @@ def not_tuple(x) -> bool:
 
 
 def null(x) -> bool:
-    return bool(x)
+    return not bool(x)
 
 
